@@ -1,0 +1,37 @@
+//Animacion Imagenes
+@keyframes animacion{
+    0%{transform: scale(.2,.2);}
+    25%{transform: scale(.3,.3);}
+    50%{transform: scale(.5,.5);}
+    75%{transform: scale(.75,.75);}
+    100%{transform: scale(1,1);}
+}
+.animacionImg{
+    animation: {
+        name: animacion;
+        timing-function: infiniti;
+        duration: 2s;
+    }
+}
+//Movimiento al pasar sobre logo
+a{
+    img{
+        transition: all 1s;
+        &:hover{
+            transform: translateY(-15px)
+        }
+    }
+}
+//Movimiento del titulo
+h1{
+    color:$colorNegro;
+    padding: 5px;
+    transition: {
+        color: 3s;
+        padding: 2s;
+    };
+    &:hover{
+        color: $colorVioleta;
+        padding: 10px;
+    }
+}
