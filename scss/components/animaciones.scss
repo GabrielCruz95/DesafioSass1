@@ -26,12 +26,18 @@ a{
 h1{
     color:$colorNegro;
     padding: 5px;
-    transition: {
-        color: 3s;
-        padding: 2s;
-    };
+    transition: color 3s , padding 2s;
+
     &:hover{
         color: $colorVioleta;
         padding: 10px;
+    }
+}
+// Animacion de los inputs
+input{
+    font-size: 18px; 
+    transition: font-size 1s;
+    &:focus{
+        font-size: 35px;
     }
 }

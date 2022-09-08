@@ -23,11 +23,16 @@ a img {
 h1 {
   color: black;
   padding: 5px;
-  transition-color: 3s;
-  transition-padding: 2s; }
+  transition: color 3s , padding 2s; }
   h1:hover {
     color: blueviolet;
     padding: 10px; }
+
+input {
+  font-size: 18px;
+  transition: font-size 1s; }
+  input:focus {
+    font-size: 35px; }
 
 .fondo {
   background-position: center;
@@ -48,3 +53,6 @@ img {
 
 .color {
   background-color: rgba(0, 255, 255, 0.316); }
+
+a {
+  font-size: 20px; }
